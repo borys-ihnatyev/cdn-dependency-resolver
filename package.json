@@ -1,0 +1,35 @@
+{
+  "name": "cdn-dependency-resolver",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "description": "CDN dependency resolver",
+  "scripts": {
+    "prebuild": "rm -rf lib",
+    "build": "babel src -d lib",
+    "prepublish": "npm run build"
+  },
+  "author": {
+    "email": "paur.link@gmail.com",
+    "name": "Borys Ihnatyev",
+    "url": "https://github.com/borys-ihnatyev"
+  },
+  "keywords": [
+    "cdn",
+    "dependency",
+    "resolve",
+    "semver"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borys-ihnatyev/cdn-dependency-resolver.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^1.6.3",
+    "semver": "^5.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0"
+  }
+}
