@@ -14,7 +14,7 @@ You can simply implement your own strategy and pass to `createResolver` function
 
 ```js
 
-const {createResult, createResolver} = require('cdn-dpepndency-resolver')
+const {fromSearch, createResolver} = require('cdn-dpepndency-resolver')
 
 function myCdnStrategy(search) {
     return {
@@ -25,7 +25,7 @@ function myCdnStrategy(search) {
         getResult(response) {
             const url = response.url || null
             /* here might be more complicated logic :) */
-            return createResult(search, url)
+            return fromSearch(search, url)
         }
     }
 }
