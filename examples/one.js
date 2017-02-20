@@ -1,6 +1,6 @@
 'use strict'
 
-const createResolver = require('../lib')
+const {createResolver} = require('../lib')
 
 const resolver = createResolver()
 

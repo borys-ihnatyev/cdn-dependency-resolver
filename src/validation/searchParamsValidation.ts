@@ -1,14 +1,14 @@
 'use strict'
-const semver = require('semver')
 
-module.exports = validateSearchParams
+import * as semver from 'semver'
+import {Search} from '../dto/Search'
 
-function validateSearchParams(search) {
+export function validateSearchParams(search: Search): void {
     if (!search.name) {
         throw new Error('name is required')
     }
 
-    if (typeof  search.name !== 'string') {
+    if (typeof search.name !== 'string') {
         throw new Error('name should be a string')
     }
 

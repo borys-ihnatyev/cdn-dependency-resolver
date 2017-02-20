@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "baseUrl": "src",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "declaration": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2015"
+    ]
+  },
+  "exclude": [
+    "examples",
+    "lib",
+    "node_modules"
+  ]
+}

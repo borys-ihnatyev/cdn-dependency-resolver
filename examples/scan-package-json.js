@@ -1,6 +1,6 @@
 'use strict'
 
-const createResolver = require('../lib')
+const {createResolver} = require('../lib')
 const {dependencies} = require('./test-package.json')
 
 const resolver = createResolver()
